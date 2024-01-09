@@ -6,6 +6,7 @@ fn main() {
 }
 
 fn list_all(realpath:&str){
+    let mut arrtest:String = String::new();
     if let Ok(dirf) = fs::read_dir(realpath)
     {
         for path in dirf{
