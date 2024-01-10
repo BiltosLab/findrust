@@ -8,11 +8,11 @@ this was meant to be educational nothing more nothing less.
 ## Usage:
 
 ```shell
-Usage findthat <PATH> <KEYWORD> OPTIONAL<-showhidden>
+Usage findthat <PATH> <KEYWORD> OPTIONAL <-searchhidden>
 ```
 
 Example:
-``` findit . findit ```
+``` findthat . main.rs -searchhidden ```
 
 ## Build and Install:
 this was not tested on anything other than arch linux but it should work on Mac OS,Windows as well.

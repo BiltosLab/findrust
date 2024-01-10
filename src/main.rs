@@ -8,11 +8,11 @@ fn main() {
     if args.len() == 3{
         list_all(args[1].as_str(),args[2].as_str(),true);
     }
-    else if args.len() == 4 && args[3].contains("-showhidden"){
+    else if args.len() == 4 && args[3].contains("-searchhidden"){
         list_all(args[1].as_str(),args[2].as_str(),false);
     }
     else if args.len() > 4 || args.len() < 3  {
-        println!("Usage findit <PATH> <KEYWORD> OPTIONAL<-showhidden>");
+        println!("Usage findit <PATH> <KEYWORD> OPTIONAL<-searchhidden>");
         exit(1);
     }    
     println!("DONE!");
